@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrepMet</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="brand">🎓 PrepMet</div>
+    <nav>
+      <a href="#" class="nav-link active" data-target="home">Home</a>
+      <a href="#" class="nav-link" data-target="syllabus">Syllabus</a>
+      <a href="#" class="nav-link" data-target="study">Study Material</a>
+      <a href="#" class="nav-link" data-target="videos">Videos</a>
+    </nav>
+    
+    <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search..." />
+</div>
+
+  </header>
+
+  <main class="container">
+    <!--HOME -->
+    <section id="home" class="panel active">
+      <h1>Welcome to PrepMet</h1>
+      <p>Your Smart Exam Preparation Assistant</p>
+      <!-- Hero Image -->
+  <img src="1.webp" alt="Study Animation" class="hero-img">
+  
+
+
+  <div class="quick">
+      <div class="quick">
+        <button class="btn" data-target="quiz">Take Quiz</button>
+        <button class="btn ghost" data-target="notes">Open Notes</button>
+        <button class="btn" data-target="result">Result</a>
+      </div>
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quiz" class="panel">
+      <h2>Practice Quiz — CSE</h2>
+      <div id="quiz-wrap"></div>
+      <div class="controls">
+        <button id="prevQ" class="btn ghost">Previous</button>
+        <button id="nextQ" class="btn">Next</button>
+        <button id="submitQuiz" class="btn primary">Submit Quiz</button>
+      </div>
+      <p class="hint">Tip: Select one answer per question. Results saved locally.</p>
+
+
+
+       <h3>📘 Quiz PDFs Download</h1>
+
+    <a class="btn" href="https://zealpolytechnic.com/wp-content/uploads/2023/01/TY-COMP-SEM-VI-MAN-22509-MCQ-Bank.pdf" download>📥 Polytechnic Quiz</a>
+    </section>
+
+    <!-- NOTES -->
+    <section id="notes" class="panel">
+      <h2>Notes</h2>
+      <textarea id="noteInput" placeholder="Apne notes yahan likho..."></textarea>
+      <div class="note-actions">
+        <button id="saveNote" class="btn primary">Save Note</button>
+        <button id="clearNotes" class="btn ghost">Clear All</button>
+      </div>
+      <div id="notesList" class="notes-grid"></div>
+    </section>
+
+    <!-- SYLLABUS -->
+    <section id="syllabus" class="panel">
+      <h2>📘 Polytechnic CSE Syllabus (1st - 6th Semester)</h2>
+      <p>Click below to view or download your semester syllabus PDFs with key subjects overview:</p>
+
+      <div class="semesters">
+        <div class="sem-card">
+          <h3>1️⃣ 1st Semester</h3>
+          <ul>
+            <li>Applied Mathematics – I</li>
+            <li>Engineering Physics</li>
+            <li>Basic Computer Engineering</li>
+            <li>Communication Skills</li>
+          </ul>
+          <a href=".pdf/SEM-I-02-Computer-Engineering (1).pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        <div class="sem-card">
+          <h3>2️⃣ 2nd Semester</h3>
+          <ul>
+            <li>Applied Mathematics – II</li>
+            <li>Digital Electronics</li>
+            <li>Programming in C</li>
+            <li>Environmental Studies</li>
+          </ul>
+          <a href="https://www.gpmunger.ac.in/wp-content/uploads/sites/42/2023/09/2020-21-SEM-2.pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        <div class="sem-card">
+          <h3>3️⃣ 3rd Semester</h3>
+          <ul>
+            <li>Data Structures</li>
+            <li>Computer Organization</li>
+            <li>Database Management System</li>
+            <li>Operating System</li>
+          </ul>
+          <a href=".pdf/CSE(18) 3rd Sem. New Syllabus.pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        <div class="sem-card">
+          <h3>4️⃣ 4th Semester</h3>
+          <ul>
+            <li>Object Oriented Programming (Java)</li>
+            <li>Software Engineering</li>
+            <li>Computer Networks</li>
+            <li>Microprocessor & Assembly Language</li>
+          </ul>
+          <a href=".pdf/4 sem slllabous.pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        <div class="sem-card">
+          <h3>5️⃣ 5th Semester</h3>
+          <ul>
+            <li>Web Technology (HTML, CSS, JS)</li>
+            <li>Python Programming</li>
+            <li>Artificial Intelligence</li>
+            <li>Mobile Application Development</li>
+          </ul>
+        <a href="5th Semester  - Computer Science & Engineering .pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        <div class="sem-card">
+          <h3>6️⃣ 6th Semester</h3>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Cloud Computing</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Major Project / Internship</li>
+          </ul>
+          <a href="https://www.gpmunger.ac.in/wp-content/uploads/sites/42/2023/09/SEM-VI-18-Computer-Science-And-Engineering.pdf" download><button class="sem-btn">Download PDF</button></a>
+        </div>
+
+        
+    <!-- 2️⃣ Electrical-->
+    <div class="sem-card">
+      <h3>🏗️ Civil Engineering</h3>
+      <ul>
+        <li>Surveying, Fluid Mechanics, RCC Design</li>
+        <li>Structural Analysis, Building Materials</li>
+        <li>Transportation & Estimation</li>
+      </ul>
+      <a href="https://dtek.karnataka.gov.in/storage/pdf-files/CDC/12_C_25_CE_CivilEngineering.pdf" download>
+        <button class="sem-btn">Download PDF</button>
+      </a>
+    </div>
+
+    <!--Electrnic-->
+    <div class="sem-card">
+      <h3>⚙️ Electronis Engineering  unit-4</h3>
+      <ul>
+        <li>Basic Electronics</li>
+        <li>Digital Electronics</li>
+        <li>Electrical & Electronics Measurements</li>
+      </ul>
+      <a href=".pdf/electronic 4 sem.pdf" download>
+        <button class="sem-btn">Download PDF</button>
+      </a>
+    </div>
+
+    <!-- 4️⃣ SSC -->
+    <div class="sem-card">
+      <h3>🧠 SSC (Staff Selection Commission)</h3>
+      <ul>
+        <li>General Intelligence & Reasoning</li>
+        <li>Quantitative Aptitude</li>
+        <li>English Language & GK</li>
+      </ul>
+      <a href="https://ssc.gov.in" target="_blank">
+        <button class="sem-btn">Download PDF</button>
+      </a>
+    </div>
+
+    <!-- 5️⃣ JE -->
+    <div class="sem-card">
+      <h3>🔧 Junior Engineer (JE)</h3>
+      <ul>
+        <li>Engineering Drawing, Circuits, Machines</li>
+        <li>Power Systems, Control System</li>
+        <li>Measurements & Estimation</li>
+      </ul>
+      <a href="https://ssc.gov.in" target="_blank">
+        <button class="sem-btn">View Syllabus</button>
+      </a>
+    </div>
+
+    <!-- 6️⃣ NEET -->
+    <div class="sem-card">
+      <h3>🧬 NEET (Medical Entrance)</h3>
+      <ul>
+        <li>Physics – Mechanics, Thermodynamics</li>
+        <li>Chemistry – Organic, Inorganic, Physical</li>
+        <li>Biology – Botany, Zoology, Genetics</li>
+      </ul>
+      <a href="https://neet.nta.nic.in/syllabus/" target="_blank">
+        <button class="sem-btn">View Syllabus</button>
+      </a>
+    </div>
+
+    <!-- 7️⃣ General Knowledge -->
+    <div class="sem-card">
+      <h3>🌏 General Knowledge / Current Affairs</h3>
+      <ul>
+        <li>Indian History, Polity, Geography</li>
+        <li>Science & Technology, Sports</li>
+        <li>Current National & International Events</li>
+      </ul>
+      <a href="https://www.gkseries.com/general-knowledge" target="_blank">
+        <button class="sem-btn">Explore GK Topics</button>
+      </a>
+    </div>
+ 
+      </div>
+    </section>
+
+
+    <!-- RESULT -->
+<div id="result" class="panel">
+  <h2>📊 Quiz Results</h2>
+  <p class="hint">Yahan aapke sabhi diye gaye quiz ke result dikhaye jayenge.</p>
+
+  <div class="controls">
+    <button id="clearResults" class="btn ghost">🗑️ Clear All Results</button>
+  </div>
+
+  <div id="resultArea" class="results-grid"></div>
+</div>
+
+<!-- 📚 Study Material Section -->
+<section id="study" class="panel">
+  <h2>📚 Study Materials & Previous Year Papers</h2>
+  <p>Download subject-wise notes and previous year papers for Polytechnic, SSC, JE, NEET, and other exams.</p>
+
+  <!-- 🎓 Study Notes -->
+  <div class="section-block">
+    <h2>🧾 Polytechnic CSE Notes (Unit Wise)</h3>
+    <div class="notes-grid">
+      <div class="note-card">
+        <strong>Unit 1 –Computer Hardware and Network </strong>
+        <a href=".pdf/Computer Hardware and Network [unit 1].pdf" class="btn ghost" target="_blank">Open Notes</a>
+      </div>
+      <div class="note-card">
+        <strong>Unit 1 – java</strong>
+        <a href=".pdf/UNIT-01 JAVA PDF NOTES.pdf" class="btn ghost" target="_blank">Open Notes</a>
+      </div>
+      <div class="note-card">
+        <strong>Unit 5 – Mobile Computing</strong>
+        <a href=".pdf/Mobile Computing unit-05.pdf" class="btn ghost" target="_blank">Open Notes</a>
+      </div>
+      <div class="note-card">
+        <strong>Unit 4 – Java Programming</strong>
+        <a href=".pdf/OOPs through Java Unit-02 Notes.pdf" class="btn ghost" target="_blank">Open Notes</a>
+      </div>
+      <div class="note-card">
+        <strong>Unit 5 – Web Development</strong>
+        <a href="https://bca.klesnc.edu.in/wp-content/uploads/2025/07/Unit-3-Complete-Notes.pdf" class="btn ghost" target="_blank">Open Notes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧠 Previous Year Papers -->
+  <div class="section-block">
+    <h3>📄 Previous Year Papers</h3>
+    <p>Best your preparation with real exam papers from Polytechnic, SSC, JE, and NEET exams.</p>
+
+    <h4>🎓 Polytechnic CSE</h4>
+    <div class="notes-grid">
+      <div class="note-card">
+        <strong>java – 2021</strong>
+        <a href=".pdf/Java 2021 Odd 5th Semester.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+      <div class="note-card">
+        <strong>Java – 2023</strong>
+        <a href=".pdf/OOP through Java 2023 Odd.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+    </div>
+
+    <h4>SSC & JE Exams</h4>
+    <div class="notes-grid">
+      <div class="note-card">
+        <strong>SSC JE – 2023</strong>
+        <a href="https://ssc.gov.in/SSCJE2023.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+      <div class="note-card">
+        <strong>SSC CHSL – 2022</strong>
+        <a href=.pdf/BPC_4.pdf class="btn ghost" target="_blank">open notes</a>
+      </div>
+    </div>
+
+    <h4> Multimedia Technology </h4>
+    <div class="notes-grid">
+      <div class="note-card">
+        <strong>NEET – 2023</strong>
+        <a href=".pdf/Multimedia Technology 2023 Odd.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+      <div class="note-card">
+        <strong>NEET – 2022</strong>
+        <a href="https://nta.ac.in/Papers/NEET_2022.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+    </div>
+    <div class="notes-grid">
+      <div class="note-card">
+        <strong>General Knowledge – Practice Set</strong>
+        <a href=".pdf/BPC_4.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+      <div class="note-card">
+        <strong>Current Affairs – 2025 (Monthly)</strong>
+        <a href=".pdf/bpc8pdf.pdf" class="btn ghost" target="_blank">Download PDF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section id="videos" class="panel">
+  <h2>🎥 Study Videos</h2>
+  <p>Watch helpful Polytechnic CSE learning videos:</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/zOjov-2OZ0E" 
+        title="Python Programming for Beginners" frameborder="0" allowfullscreen></iframe>
+      <h4>Python Programming Basics</h4>
+    </div>
+
+    <div class="video-card">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/5_5oE5lgrhw"
+        title="HTML & CSS Tutorial" frameborder="0" allowfullscreen></iframe>
+      <h4>HTML & CSS Full Tutorial</h4>
+    </div>
+
+    <div class="video-card">
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/t320hxHHBWc"
+        title="Computer Networks Explained" frameborder="0" allowfullscreen></iframe>
+      <h4>Drone Technology</h4>
+    </div>
+
+    <div class="video-card">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/erEgovG9WBs" 
+        title="CSE Notes Lecture 1"
+        frameborder="0" allowfullscreen>
+      </iframe>
+      <p><strong>Web development</strong></p>
+    </div>
+
+    <div class="video-card">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/ItAHz8hLzVw" 
+        title="Polytechnic PYQ Discussion"
+        frameborder="0" allowfullscreen>
+      </iframe>
+    <p><strong>Unit 1 – Introduction</strong></p>
+    </div>
+
+    <div class="video-card">
+      <iframe width="100%" height="200" 
+        src="https://www.youtube.com/embed/kqtD5dpn9C8" 
+        title="Python Programming Tutorial"
+        frameborder="0" allowfullscreen>
+      </iframe>
+      <p><strong>Basic Python <Code></Code></strong></p>
+    </div>
+
+</section>
+
+
+
+  <footer class="site-footer">
+    <div>2025 PrepMate. All Rights Reserved</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
